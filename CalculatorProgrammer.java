@@ -1,13 +1,12 @@
 
 /**
- * class Calculator
+ * class CalculatorProgrammer 
  *
  * @author dientaufan
  * @version 0.1
  */
-public class Calculator
+public class CalculatorProgrammer extends Calculator
 {
-    // op1
     public double op1=0;
     public double op2=0;
     public static final String info = "Kalkulatorku";
@@ -16,7 +15,7 @@ public class Calculator
     /**
      * Constructor for objects of class Calculator
      */
-    public Calculator()
+    public CalculatorProgrammer()
     {
         // initialise instance variables
         this.jumlahobject += 1;
@@ -27,7 +26,7 @@ public class Calculator
      * @param  double, double inisialisasi nilai dari op1 dan op2
     */
   
-    public Calculator(double op1, double op2)
+    public CalculatorProgrammer(double op1, double op2)
     {
         this.op1 = op1;
         this.op2 = op2;
@@ -40,7 +39,7 @@ public class Calculator
      * @param  double, double inisialisasi nilai dari op1 dan op2
     */
   
-    public Calculator(double op2)
+    public CalculatorProgrammer(double op2)
     {
         this.op2 = op2;
         this.jumlahobject += 1;
@@ -100,6 +99,22 @@ public class Calculator
         return jumlah();
     }
     
+    /**
+     * konversiBilangantoHex
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil penjumlahan op1 + op2
+     */
+    public String konversiBilangantoHex(int op1) 
+    {
+        // buat konversi ke hex dengan java (tugas)
+        String hasilKonversi = "hasilkonversi " + op1 ;
+        return hasilKonversi;
+    }
     
+    // method konversiBilangantoBiner
+    
+ 
     
 }

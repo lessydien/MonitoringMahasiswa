@@ -9,6 +9,7 @@ public class Main
 {
     public static void main(String args[])
     {
+       /*
        System.out.println(Calculator.info);
        
        Calculator calculator1 = new Calculator();
@@ -46,10 +47,31 @@ public class Main
        
        System.out.println("");
        double hasil1 = calculator1.jumlah();
-       double hasil2 = calculator1.jumlah(3.4, 5.4);
+       calculator1.op1  = 3.4;
+       calculator2.op2 = 5.4;
+       double hasil2 = calculator1.jumlah();
+       double hasil3 = calculator1.jumlah(4.5, 6.5);
+       
        System.out.println("Hasil penjumlahan method jumlah tanpa parameter: "+ hasil1);
        System.out.println("Hasil penjumlahan method jumlah dengan parameter: "+ hasil2);
+       System.out.println("Hasil penjumlahan method jumlah dengan parameter: "+ hasil3);
+       */
+      
+       /*
+       CalculatorProgrammer clp = new CalculatorProgrammer();
+       System.out.println(clp.jumlah(4,5));
+       System.out.println(clp.konversiBilangantoHex(4));
+       */
+      
+       CalculatorScientific cs = new CalculatorScientific();
+       System.out.println(cs.jumlah(4,5));
+       System.out.println(cs.menghitungFaktorial(4));
+       System.out.println(CalculatorScientific.jumlahobject);
        
+       CalculatorScientific cs2 = new CalculatorScientific(2,3);
+       System.out.println(cs2.op1);
+       System.out.println(cs2.op2);
+    
     }
     
 }
