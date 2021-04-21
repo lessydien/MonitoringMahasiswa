@@ -56,7 +56,7 @@ public class CalculatorScientific extends Calculator
      */
     public int menghitungFaktorial(int op1) 
     {
-        // tugas
+        // contoh
         int hasil = 5;
         return hasil;
     }

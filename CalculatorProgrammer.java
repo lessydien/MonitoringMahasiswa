@@ -100,20 +100,20 @@ public class CalculatorProgrammer extends Calculator
     }
     
     /**
-     * konversiBilangantoHex
+     * konversiBilanganDesimaltoHex
      *
      * @param  double op1
      *         double op2
      * @return double hasil penjumlahan op1 + op2
      */
-    public String konversiBilangantoHex(int op1) 
+    public String konversiBilanganDesimaltoHex(int op1) 
     {
         // buat konversi ke hex dengan java (tugas)
         String hasilKonversi = "hasilkonversi " + op1 ;
         return hasilKonversi;
     }
     
-    // method konversiBilangantoBiner
+    // method konversiBilanganDesimaltoBiner
     
  
     
