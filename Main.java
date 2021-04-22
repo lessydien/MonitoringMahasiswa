@@ -1,4 +1,4 @@
-
+import java.lang.Math;
 /**
  * class Main 
  *
@@ -63,6 +63,7 @@ public class Main
        System.out.println(clp.konversiBilangantoHex(4));
        */
       
+       /*
        CalculatorScientific cs = new CalculatorScientific();
        System.out.println(cs.jumlah(4,5));
        System.out.println(cs.menghitungFaktorial(4));
@@ -71,7 +72,29 @@ public class Main
        CalculatorScientific cs2 = new CalculatorScientific(2,3);
        System.out.println(cs2.op1);
        System.out.println(cs2.op2);
-    
+       
+       */
+      
+       CalculatorTrigonometri  clr = new CalculatorTriRadian();
+       CalculatorTrigonometri  cld = new CalculatorTriDegree();
+       
+       clr.op1 = 3;
+       clr.op2 = 4;
+       System.out.println(clr.jumlah());
+       
+       cld.op1 = 3;
+       cld.op2 = 4;
+       System.out.println(clr.jumlah());
+       double sudutindegree = 30; 
+       double sudutinrad = Math.PI / 6;
+       cld.konversi(sudutindegree);
+       clr.konversi(sudutinrad);
+       
+       System.out.println(cld.sin());
+       System.out.println(clr.sin());
+       
+       CalculatorScientific cs = new CalculatorScientific();
+       System.out.println(cs.menghitungFaktorial(4));     
     }
     
 }
