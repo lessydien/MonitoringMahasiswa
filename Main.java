@@ -74,7 +74,7 @@ public class Main
        System.out.println(cs2.op2);
        
        */
-      
+      /*
        CalculatorTrigonometri  clr = new CalculatorTriRadian();
        CalculatorTrigonometri  cld = new CalculatorTriDegree();
        
@@ -94,7 +94,30 @@ public class Main
        System.out.println(clr.sin());
        
        CalculatorScientific cs = new CalculatorScientific();
-       System.out.println(cs.menghitungFaktorial(4));     
+       System.out.println(cs.menghitungFaktorial(4)); 
+       */
+      
+      Calculator cl = new Calculator();
+      SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryReverse();
+      //SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryForward();
+      
+      cl.setSimpanOperasi(spr);
+      
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println(cl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(cl.bacaOperasi());
+      
+      
     }
     
 }
